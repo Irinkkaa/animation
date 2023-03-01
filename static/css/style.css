@@ -1,0 +1,93 @@
+body{
+    background-color:rgb(9, 9, 36);
+    background-image:url(../img/Stars-PNG-Image.png);
+    animation: background 3s infinite alternate;
+}
+
+@keyframes background {
+    50% {
+      background: rgb(0, 0, 0);
+    }
+}
+
+section{
+    position: absolute;
+    top:30%; 
+    left:50%;
+}
+
+img{
+    width: 50px;
+}
+
+.title{
+    padding-bottom: 50px;
+    font-size: 20px;
+    color: azure;
+    animation: title 8s infinite;
+}
+
+@keyframes title {
+    50% {
+      color: rgb(9, 9, 36);
+    }
+}
+
+.sun{
+    width: 200px;
+    height: 200px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    box-shadow: 0 0 20px orange;
+}
+
+.eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.eye{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.shines{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.shine{
+    width: 30px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: rgb(241, 146, 146);
+    box-shadow: 0 0 20px rgb(243, 1, 9);
+}
+
+.planet{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(41, 10, 197);
+    box-shadow: 0 0 20px rgb(63, 129, 214);
+    border-radius: 50%;
+    position: absolute;
+    animation: example 4s linear infinite;
+}
+
+@keyframes example{
+    0%{
+      transform:rotate(0)
+                translate(-365px)
+                rotate(0);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-300px)
+                rotate(-300deg);
+    }
+}
